@@ -1,0 +1,3 @@
+Q1 crashes on 10^5 input. KNP search needed.
+Q7 try having a timeconsumed array, storing value for each element
+Q6 also fucking crashes
