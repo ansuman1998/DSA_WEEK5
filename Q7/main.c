@@ -19,7 +19,7 @@ int main()
         else if(i!=0 && lower[i-1]+timeconsumed>lower[i])   /*This states that the ith dude has to wait for sometime. That "sometime" is
                                                             (((i-1) dude's arrival + time waited by him till he leaves)-i dude's arrival)*/
             timeconsumed=lower[i-1]+ timeconsumed - lower[i];
-        if(lower[i]+timeconsumed<=higher[i])  /* At this point the timeconsumed variable holds the wait time for ith dude from after his arrival
+        if(lower[i]+timeconsumed<higher[i])  /* At this point the timeconsumed variable holds the wait time for ith dude from after his arrival
                                                 till the point when the caterer starts to give him sweet. If it coincides/is less than his departure, he doesn't get sweet*/
 
         {
